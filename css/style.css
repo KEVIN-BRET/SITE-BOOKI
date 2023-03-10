@@ -5,6 +5,8 @@
     color: black;
 }
 
+/* comment mettre une exeption (pour le logo location searchbar) a main-color ?? */
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -78,16 +80,15 @@ body {
     box-sizing: border-box;
 }
 
-/***** DEBUT RECHERCHES *****/
-
-.recherches {
-    display: flex;
-    
+.title {
+    margin-bottom: 35px;
 }
 
-.flex-form-search {
+/***** DEBUT RECHERCHES *****/
+
+.search-bar {
     /* background: pink; */
-    margin: 30px 0px;
+    margin-bottom: 35px;
     width: 0%;
     display: flex;
     flex-direction: row;
@@ -96,7 +97,7 @@ body {
     font-weight: bold;
 }
 
-.map-icon {
+.location-icon {
     height: 50px;
     display: flex;
     /* width: 50px; */
@@ -104,7 +105,6 @@ body {
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     align-items: center;
-    justify-content: center;    
 }
 
 .search-area {
@@ -139,6 +139,46 @@ input:focus {
 }
 
 /***** FIN RECHERCHES *****/
+
+
+/***** SEARCH BAR - DEBUT *****/
+
+.filter-bar {
+    /* background: pink; */
+    margin-bottom: 35px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    gap: 15px;
+    
+}
+
+.filter {
+    /* background: green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 15px 19px;
+    gap: 10px;
+}
+
+.filter:hover {
+    background-color: #DEEBFF;
+}
+
+/***** SEARCH BAR - FIN *****/
+
+.infos-dispo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
 
 
 .section-title {
